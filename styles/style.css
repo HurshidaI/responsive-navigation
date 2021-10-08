@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: violet;
+}
+
+.navigation a {
+    display: block;
+    color: beige;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navigation a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.navigation a.active {
+    background-color: aquamarine;
+    color: white;
+}
+
+.navigation img {
+    float: inline-end;
+    display: none;
+    height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {
+        display: none;
+    }
+    .navigation a:first-child {
+        display: inline;
+        float: right;
+        margin-right: 10px;
+    }
+    .navigation img {
+        /* float: right; */
+        display: inline-block;
+    }
+}
